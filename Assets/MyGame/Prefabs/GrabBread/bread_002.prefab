@@ -143,10 +143,11 @@ GameObject:
   - component: {fileID: 657368889088914610}
   - component: {fileID: 8577095430895579921}
   - component: {fileID: 3011187039006162695}
+  - component: {fileID: 6547020958270527500}
   - component: {fileID: 4634512440097376072}
+  - component: {fileID: -3122067501762624}
   - component: {fileID: 4341890497253171781}
   - component: {fileID: 8214104099697007896}
-  - component: {fileID: 175653548517062557}
   - component: {fileID: 6771546467156019535}
   m_Layer: 0
   m_Name: bread_002
@@ -267,11 +268,11 @@ MonoBehaviour:
   key:
     target: 0
     key: spawned
-  delayTimeSeconds: 7
+  delayTimeSeconds: 15
   triggers:
   - target: 0
     specifiedTargetItem: {fileID: 0}
-    key: destoy
+    key: destroy
     type: 0
     value:
       boolValue: 0
@@ -279,7 +280,7 @@ MonoBehaviour:
       integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
---- !u!114 &4634512440097376072
+--- !u!114 &6547020958270527500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,7 +295,7 @@ MonoBehaviour:
   globalGimmickKey:
     key:
       target: 0
-      key: destoy
+      key: destroy
     item: {fileID: 5961284699934761807}
   logic:
     statements:
@@ -338,7 +339,66 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &4341890497253171781
+--- !u!114 &4634512440097376072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4192659601680339097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67bdc2960f9462385a7fba1c0052836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalGimmickKey:
+    key:
+      target: 2
+      key: destroyGrabBreads
+    item: {fileID: 5961284699934761807}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 2
+          key: breadNum
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+              vector2Value: {x: 0, y: 0}
+              vector3Value: {x: 0, y: 0, z: 0}
+            sourceState:
+              target: 2
+              key: 
+              type: 6
+          operatorExpression:
+            operator: 1
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 2
+                  key: 
+                  type: 6
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &-3122067501762624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,7 +413,23 @@ MonoBehaviour:
   item: {fileID: 5961284699934761807}
   key:
     target: 0
-    key: destoy
+    key: destroy
+--- !u!114 &4341890497253171781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4192659601680339097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396768c05fa51bd47ab528ca7d76a531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5961284699934761807}
+  key:
+    target: 2
+    key: destroyGrabBreads
 --- !u!114 &8214104099697007896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,29 +449,6 @@ MonoBehaviour:
   space: {fileID: 1043881366985954794}
   force: {x: 0, y: 0, z: 50}
   ignoreMass: 0
---- !u!114 &175653548517062557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4192659601680339097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82b6c242e0a44f03b7bb271069f089e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggers:
-  - target: 1
-    specifiedTargetItem: {fileID: 5961284699934761807}
-    key: addForce
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
 --- !u!114 &6771546467156019535
 MonoBehaviour:
   m_ObjectHideFlags: 0
