@@ -111,10 +111,11 @@ GameObject:
   - component: {fileID: 6197410332500984772}
   - component: {fileID: 164879353210128727}
   - component: {fileID: 7292233824976242025}
-  - component: {fileID: 3720330744715637815}
   - component: {fileID: 2237055765682102552}
-  - component: {fileID: 2154643188218370958}
+  - component: {fileID: 3720330744715637815}
   - component: {fileID: -540544423667276695}
+  - component: {fileID: 1135776464141616131}
+  - component: {fileID: 2206808350779568938}
   m_Layer: 0
   m_Name: Croissant
   m_TagString: Untagged
@@ -218,16 +219,6 @@ MonoBehaviour:
       integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: addForceTimer
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
 --- !u!114 &7292233824976242025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +235,7 @@ MonoBehaviour:
   key:
     target: 0
     key: spawned
-  delayTimeSeconds: 25
+  delayTimeSeconds: 7
   triggers:
   - target: 0
     specifiedTargetItem: {fileID: 0}
@@ -256,22 +247,6 @@ MonoBehaviour:
       integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
---- !u!114 &3720330744715637815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3011045313874097549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 396768c05fa51bd47ab528ca7d76a531, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 3011045313874097551}
-  key:
-    target: 0
-    key: destoy
 --- !u!114 &2237055765682102552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +306,7 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &2154643188218370958
+--- !u!114 &3720330744715637815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,25 +315,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3011045313874097549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5a9785e42671427a8761e148889f041, type: 3}
+  m_Script: {fileID: 11500000, guid: 396768c05fa51bd47ab528ca7d76a531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 3011045313874097551}
   key:
     target: 0
-    key: addForceTimer
-  delayTimeSeconds: 10
-  triggers:
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: addForce
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
+    key: destoy
 --- !u!114 &-540544423667276695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,3 +341,50 @@ MonoBehaviour:
   space: {fileID: 3011045313874097550}
   force: {x: 0, y: 0, z: 50}
   ignoreMass: 0
+--- !u!114 &1135776464141616131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011045313874097549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b6c242e0a44f03b7bb271069f089e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 1
+    specifiedTargetItem: {fileID: 3011045313874097551}
+    key: addForce
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+--- !u!114 &2206808350779568938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011045313874097549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90a8458122ef47c3b840e286a75994a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 3011045313874097551}
+  triggers:
+  - target: 0
+    specifiedTargetItem: {fileID: 0}
+    key: addForce
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
