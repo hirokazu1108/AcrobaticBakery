@@ -2818,6 +2818,7 @@ GameObject:
   - component: {fileID: 2110395645}
   - component: {fileID: 2110395641}
   - component: {fileID: 2110395644}
+  - component: {fileID: 2110395646}
   m_Layer: 0
   m_Name: GrabGameManager
   m_TagString: Untagged
@@ -3494,6 +3495,29 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
+--- !u!114 &2110395646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110395637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b6c242e0a44f03b7bb271069f089e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 4
+    specifiedTargetItem: {fileID: 0}
+    key: destroyGrabBreads
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
 --- !u!114 &795289394962720721
 MonoBehaviour:
   m_ObjectHideFlags: 0
