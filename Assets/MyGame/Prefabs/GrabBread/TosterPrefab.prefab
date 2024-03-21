@@ -615,8 +615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movableItem: {fileID: 679551126843552102}
   key:
-    target: 2
-    key: tosterFlyBread
+    target: 0
+    key: fly
   space: {fileID: 679551126843552123}
   force: {x: 0, y: 8, z: 0}
   ignoreMass: 1
