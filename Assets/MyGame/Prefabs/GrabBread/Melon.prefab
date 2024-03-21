@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1211231128947619544}
   - component: {fileID: 1353114372652963446}
   - component: {fileID: 7520357369838692934}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,12 +114,11 @@ GameObject:
   - component: {fileID: 50089795847113514}
   - component: {fileID: 892126566667524812}
   - component: {fileID: 2951853106878435847}
-  - component: {fileID: 2142119300792835965}
   - component: {fileID: 8052675956616125608}
-  - component: {fileID: 7225799170595841133}
   - component: {fileID: 6133449286372112403}
-  - component: {fileID: 8947982043399973511}
-  m_Layer: 0
+  - component: {fileID: 3812558653728534460}
+  - component: {fileID: 5345232077543314196}
+  m_Layer: 14
   m_Name: Melon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,17 +203,7 @@ MonoBehaviour:
   triggers:
   - target: 0
     specifiedTargetItem: {fileID: 0}
-    key: spawned
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: addForce
+    key: init
     type: 0
     value:
       boolValue: 0
@@ -237,8 +226,8 @@ MonoBehaviour:
   item: {fileID: 9105866173146987296}
   key:
     target: 0
-    key: spawned
-  delayTimeSeconds: 15
+    key: init
+  delayTimeSeconds: 8
   triggers:
   - target: 0
     specifiedTargetItem: {fileID: 0}
@@ -309,65 +298,6 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &2142119300792835965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6355024884989422288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e67bdc2960f9462385a7fba1c0052836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  globalGimmickKey:
-    key:
-      target: 2
-      key: destroyGrabBreads
-    item: {fileID: 9105866173146987296}
-  logic:
-    statements:
-    - singleStatement:
-        targetState:
-          target: 2
-          key: breadNum
-          parameterType: 3
-        expression:
-          type: 1
-          value:
-            type: 0
-            constant:
-              type: 1
-              boolValue: 0
-              floatValue: 0
-              integerValue: 0
-              vector2Value: {x: 0, y: 0}
-              vector3Value: {x: 0, y: 0, z: 0}
-            sourceState:
-              target: 2
-              key: 
-              type: 6
-          operatorExpression:
-            operator: 1
-            operands:
-            - type: 0
-              value:
-                type: 0
-                constant:
-                  type: 3
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 1
-                  vector2Value: {x: 0, y: 0}
-                  vector3Value: {x: 0, y: 0, z: 0}
-                sourceState:
-                  target: 2
-                  key: 
-                  type: 6
-              operatorExpression:
-                operator: 0
-                operands: []
 --- !u!114 &8052675956616125608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,22 +314,6 @@ MonoBehaviour:
   key:
     target: 0
     key: destroy
---- !u!114 &7225799170595841133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6355024884989422288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 396768c05fa51bd47ab528ca7d76a531, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 9105866173146987296}
-  key:
-    target: 2
-    key: destroyGrabBreads
 --- !u!114 &6133449286372112403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,11 +329,11 @@ MonoBehaviour:
   movableItem: {fileID: 8644828664605757601}
   key:
     target: 0
-    key: addForce
+    key: init
   space: {fileID: 2331715885722687512}
   force: {x: 0, y: 0, z: 50}
-  ignoreMass: 0
---- !u!114 &8947982043399973511
+  ignoreMass: 1
+--- !u!114 &3812558653728534460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,14 +342,72 @@ MonoBehaviour:
   m_GameObject: {fileID: 6355024884989422288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f90a8458122ef47c3b840e286a75994a, type: 3}
+  m_Script: {fileID: 11500000, guid: d06d8dc2ce9e442ab2712de694945b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 9105866173146987296}
+  key:
+    target: 2
+    key: addForceGrabBreads
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 0
+          key: init
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 0
+              vector2Value: {x: 0, y: 0}
+              vector3Value: {x: 0, y: 0, z: 0}
+            sourceState:
+              target: 0
+              key: 
+              type: 6
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 0
+                  key: 
+                  type: 6
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &5345232077543314196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6355024884989422288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2872ae1873cd4546a4cf7dae626612b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 9105866173146987296}
   triggers:
   - target: 0
     specifiedTargetItem: {fileID: 0}
-    key: addForce
+    key: destroy
     type: 0
     value:
       boolValue: 0
