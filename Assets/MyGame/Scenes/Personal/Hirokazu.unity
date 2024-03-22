@@ -3200,12 +3200,28 @@ PrefabInstance:
       propertyPath: triggers.Array.data[0].key
       value: entryGrabGame
       objectReference: {fileID: 0}
+    - target: {fileID: 3905587819418791237, guid: 5aa9ec955f7c4e74facbfdda45086067,
+        type: 3}
+      propertyPath: id.value
+      value: 15943645846960256697
+      objectReference: {fileID: 0}
     - target: {fileID: 3905587819418791243, guid: 5aa9ec955f7c4e74facbfdda45086067,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 362349783}
-    m_RemovedComponents: []
+    - target: {fileID: 8347444052964724735, guid: 5aa9ec955f7c4e74facbfdda45086067,
+        type: 3}
+      propertyPath: key.key
+      value: entryGrabGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347444052964724735, guid: 5aa9ec955f7c4e74facbfdda45086067,
+        type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 362349783}
+    m_RemovedComponents:
+    - {fileID: 3905587819418791243, guid: 5aa9ec955f7c4e74facbfdda45086067, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5aa9ec955f7c4e74facbfdda45086067, type: 3}
 --- !u!1 &1001533596
 GameObject:
@@ -3688,6 +3704,16 @@ PrefabInstance:
         type: 3}
       propertyPath: triggers.Array.data[1].target
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905587819418791237, guid: 5aa9ec955f7c4e74facbfdda45086067,
+        type: 3}
+      propertyPath: id.value
+      value: 4753652317426826710
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401847198474595696, guid: 5aa9ec955f7c4e74facbfdda45086067,
+        type: 3}
+      propertyPath: id.value
+      value: 14336013247258443296
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3905587819418791243, guid: 5aa9ec955f7c4e74facbfdda45086067, type: 3}
