@@ -139,7 +139,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5048311983363495419}
   - component: {fileID: 8990407538497696480}
-  - component: {fileID: 8340177358890625093}
   - component: {fileID: 8990407538497696484}
   - component: {fileID: 8990407538497696485}
   - component: {fileID: 8990407538497696486}
@@ -183,23 +182,6 @@ MonoBehaviour:
     value: 4333103686806238189
   itemName: "\u30C9\u30A2"
   size: {x: 0, y: 0, z: 0}
---- !u!114 &8340177358890625093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5048311983363495415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e61061896c654489a41575fc291bf4a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sourceCodeAsset: {fileID: 0}
-  sourceCode: "const door = $.subNode(\"Model\");\r\nconst axis = new Vector3(0,
-    1, 0);\r\n\r\n$.onInteract(() => {\r\n  let isOpen = $.state.isOpen;\r\n  isOpen
-    = !isOpen;\r\n  $.state.isOpen = isOpen;\r\n  const rot = new Quaternion()\r\n   
-    .setFromAxisAngle(axis, isOpen ? -90 : 0);\r\n  door.setRotation(rot);\r\n});"
 --- !u!95 &8990407538497696484
 Animator:
   serializedVersion: 4
