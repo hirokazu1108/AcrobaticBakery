@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8275791672764747955}
   - component: {fileID: 2151308109283822749}
   - component: {fileID: 8540379414605042047}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,9 @@ GameObject:
   - component: {fileID: 2836836405179974665}
   - component: {fileID: 5114251280668868938}
   - component: {fileID: 5114251280668868939}
-  m_Layer: 0
+  - component: {fileID: 6109462204254179022}
+  - component: {fileID: 3760092364471348}
+  m_Layer: 14
   m_Name: ItemPlainBread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,3 +218,31 @@ MonoBehaviour:
     value: 0
   itemName: "\u30C8\u30FC\u30B9\u30C8"
   size: {x: 0, y: 0, z: 0}
+--- !u!114 &6109462204254179022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114251280668868936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557c1287071b147459bb6f001560c6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5114251280668868939}
+  rb: {fileID: 5114251280668868938}
+--- !u!114 &3760092364471348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114251280668868936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce108e3354c62c345a1cbcdf1f965e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movableItem: {fileID: 6109462204254179022}
+  grip: {fileID: 0}
