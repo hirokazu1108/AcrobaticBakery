@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key:
-    target: 1
+    target: 2
     key: add
     item: {fileID: 0}
   logic:
