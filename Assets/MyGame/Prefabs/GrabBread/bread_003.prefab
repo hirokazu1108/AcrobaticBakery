@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5551555392598237110}
   - component: {fileID: -1976213313034321993}
   - component: {fileID: 7593243162132970484}
+  - component: {fileID: -2504993549777653542}
   m_Layer: 14
   m_Name: bread_003
   m_TagString: Untagged
@@ -326,6 +327,36 @@ MonoBehaviour:
       integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
+--- !u!114 &-2504993549777653542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622066370604043637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4facf580bbce4a8ca569b43b5db5cf5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalGimmickKey:
+    key:
+      target: 0
+      key: grabbread
+    item: {fileID: 7371262963711614085}
+  choices:
+  - weight: 1
+    triggers:
+    - target: 4
+      specifiedTargetItem: {fileID: 0}
+      key: add
+      type: 0
+      value:
+        boolValue: 0
+        floatValue: 0
+        integerValue: 0
+        vector2Value: {x: 0, y: 0}
+        vector3Value: {x: 0, y: 0, z: 0}
 --- !u!1001 &5245727680607735490
 PrefabInstance:
   m_ObjectHideFlags: 0
