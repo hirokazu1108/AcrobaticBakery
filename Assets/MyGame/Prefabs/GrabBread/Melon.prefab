@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 6133449286372112403}
   - component: {fileID: 3812558653728534460}
   - component: {fileID: 5345232077543314196}
+  - component: {fileID: 1096071905995420481}
   m_Layer: 14
   m_Name: Melon
   m_TagString: Untagged
@@ -425,3 +426,33 @@ MonoBehaviour:
       integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
+--- !u!114 &1096071905995420481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6355024884989422288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4facf580bbce4a8ca569b43b5db5cf5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalGimmickKey:
+    key:
+      target: 0
+      key: grabbread
+    item: {fileID: 9105866173146987296}
+  choices:
+  - weight: 1
+    triggers:
+    - target: 4
+      specifiedTargetItem: {fileID: 0}
+      key: add
+      type: 0
+      value:
+        boolValue: 0
+        floatValue: 0
+        integerValue: 0
+        vector2Value: {x: 0, y: 0}
+        vector3Value: {x: 0, y: 0, z: 0}
