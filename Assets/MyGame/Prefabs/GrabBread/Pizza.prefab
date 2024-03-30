@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 8784294654989297008}
   - component: {fileID: 4843248448562266571}
   - component: {fileID: -9116423258430990392}
-  - component: {fileID: 6728851299650122392}
   - component: {fileID: -5156597901577114966}
   m_Layer: 14
   m_Name: Pizza
@@ -390,40 +389,6 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &6728851299650122392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5627628280935797512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2872ae1873cd4546a4cf7dae626612b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 7527281233567073016}
-  triggers:
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: destroy
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-  - target: 2
-    specifiedTargetItem: {fileID: 0}
-    key: add
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
 --- !u!114 &-5156597901577114966
 MonoBehaviour:
   m_ObjectHideFlags: 0
