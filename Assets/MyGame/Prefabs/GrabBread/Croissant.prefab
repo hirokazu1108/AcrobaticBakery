@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 362463701250086338}
   - component: {fileID: -540544423667276695}
   - component: {fileID: 4291415157391177875}
-  - component: {fileID: -3360665368677839134}
   m_Layer: 14
   m_Name: Croissant
   m_TagString: Untagged
@@ -389,37 +388,3 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &-3360665368677839134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3011045313874097549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2872ae1873cd4546a4cf7dae626612b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 3011045313874097551}
-  triggers:
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: destroy
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-  - target: 2
-    specifiedTargetItem: {fileID: 0}
-    key: add
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}

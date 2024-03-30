@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: -3733706108435878835}
   - component: {fileID: 3012411219022167551}
   - component: {fileID: -8165178836441872646}
-  - component: {fileID: -4226466199701218597}
   m_Layer: 14
   m_Name: FrenchBread
   m_TagString: Untagged
@@ -389,37 +388,3 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &-4226466199701218597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8680904320672607259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2872ae1873cd4546a4cf7dae626612b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 8680904320672607257}
-  triggers:
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: destroy
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-  - target: 2
-    specifiedTargetItem: {fileID: 0}
-    key: add
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}

@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 8015532939373316790}
   - component: {fileID: 6188611104213691917}
   - component: {fileID: -4153364174341622981}
-  - component: {fileID: -9108281366051874096}
   m_Layer: 14
   m_Name: ChocoCorone
   m_TagString: Untagged
@@ -389,37 +388,3 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &-9108281366051874096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6398959580992978126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2872ae1873cd4546a4cf7dae626612b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 9125057733682212158}
-  triggers:
-  - target: 0
-    specifiedTargetItem: {fileID: 0}
-    key: destroy
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-  - target: 2
-    specifiedTargetItem: {fileID: 0}
-    key: add
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
