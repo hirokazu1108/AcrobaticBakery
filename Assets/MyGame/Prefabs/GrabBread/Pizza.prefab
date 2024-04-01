@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 8784294654989297008}
   - component: {fileID: 4843248448562266571}
   - component: {fileID: -9116423258430990392}
-  - component: {fileID: -5156597901577114966}
+  - component: {fileID: -8811683958679987490}
   m_Layer: 14
   m_Name: Pizza
   m_TagString: Untagged
@@ -389,7 +389,7 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
---- !u!114 &-5156597901577114966
+--- !u!114 &-8811683958679987490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -398,24 +398,126 @@ MonoBehaviour:
   m_GameObject: {fileID: 5627628280935797512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4facf580bbce4a8ca569b43b5db5cf5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalGimmickKey:
-    key:
-      target: 0
-      key: grabbread
+  key:
+    target: 0
+    key: grabbread
     item: {fileID: 7527281233567073016}
-  choices:
-  - weight: 1
-    triggers:
-    - target: 4
-      specifiedTargetItem: {fileID: 0}
-      key: add
-      type: 0
-      value:
-        boolValue: 0
-        floatValue: 0
-        integerValue: 0
-        vector2Value: {x: 0, y: 0}
-        vector3Value: {x: 0, y: 0, z: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: scoreOfGrabBread
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 1
+              vector2Value: {x: 0, y: 0}
+              vector3Value: {x: 0, y: 0, z: 0}
+            sourceState:
+              target: 1
+              key: 
+              type: 6
+          operatorExpression:
+            operator: 2
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 1
+                  key: scoreOfGrabBread
+                  type: 3
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 1
+                  key: 
+                  type: 6
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: playerPoint
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 1
+              vector2Value: {x: 0, y: 0}
+              vector3Value: {x: 0, y: 0, z: 0}
+            sourceState:
+              target: 1
+              key: 
+              type: 6
+          operatorExpression:
+            operator: 2
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 1
+                  key: playerPoint
+                  type: 3
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 1
+                  key: 
+                  type: 6
+              operatorExpression:
+                operator: 0
+                operands: []
