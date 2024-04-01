@@ -1190,7 +1190,7 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: score
+          key: scoreOfGrabBread
           parameterType: 3
         expression:
           type: 0
