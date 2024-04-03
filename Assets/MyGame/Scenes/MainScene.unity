@@ -3925,6 +3925,11 @@ PrefabInstance:
       propertyPath: id.value
       value: 8954797751184414621
       objectReference: {fileID: 0}
+    - target: {fileID: 7865462436824230771, guid: b1a67d39e2bfc9e4aa6fd7ea162ed179,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8909656208085553153, guid: b1a67d39e2bfc9e4aa6fd7ea162ed179,
         type: 3}
       propertyPath: m_Layer
