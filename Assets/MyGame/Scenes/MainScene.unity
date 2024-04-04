@@ -46436,6 +46436,26 @@ PrefabInstance:
       propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 681949203, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 681949203, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 681949203, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 681949203, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 681949203, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 126935848520565183, guid: 2e906344d254579458ef82ef75bc0ed2,
         type: 3}
       propertyPath: id.value
