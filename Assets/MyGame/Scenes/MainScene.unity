@@ -2726,7 +2726,7 @@ MonoBehaviour:
     value:
       boolValue: 0
       floatValue: 0
-      integerValue: 11
+      integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
 --- !u!4 &1207807620
@@ -7094,7 +7094,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
-  m_Center: {x: 2, y: 1, z: -1}
+  m_Center: {x: 2.12, y: 1, z: -0.68}
 --- !u!33 &439080739041566220
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7393,7 +7393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618808480448409556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.98, z: 3.18}
+  m_LocalPosition: {x: 6.22, y: 409.31, z: 276.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46759,6 +46759,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19383511, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: delayTimeSeconds
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 19383514, guid: 2e906344d254579458ef82ef75bc0ed2, type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 126935848520565183, guid: 2e906344d254579458ef82ef75bc0ed2,
         type: 3}
       propertyPath: id.value
@@ -49616,7 +49624,7 @@ MonoBehaviour:
                   type: 3
                   boolValue: 0
                   floatValue: 0
-                  integerValue: 200
+                  integerValue: 100
                   vector2Value: {x: 0, y: 0}
                   vector3Value: {x: 0, y: 0, z: 0}
                 sourceState:
@@ -61999,7 +62007,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6588244122883267775}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 2.312246, z: 1}
